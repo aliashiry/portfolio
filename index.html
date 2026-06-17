@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>علي حسن علي — مطور Flutter & Full Stack .NET</title>
+<meta name="description" content="بورتفوليو علي حسن علي — مطور Flutter وFull Stack .NET. تطبيقات موبايل منشورة على Google Play، ومشاريع ويب بـ ASP.NET Core وAngular.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-bracket">&lt;</span><span data-i18n="nav.name">علي</span><span class="nav-logo-bracket">/&gt;</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="nav.about">عني</a></li>
+      <li><a href="#stack" data-i18n="nav.stack">الأدوات</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">المشاريع</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">الخبرة</a></li>
+      <li><button type="button" id="langToggle" class="lang-toggle mono" data-i18n-aria="nav.langSwitch" aria-label="تبديل اللغة">EN</button></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">تواصل معي</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <h1 class="hero-title">
+      <span class="hero-title-line" data-i18n="hero.title1">أبني تطبيقات موبايل</span>
+      <span class="hero-title-line hero-title-accent" data-i18n="hero.title2">ومنصات ويب</span>
+      <span class="hero-title-line" data-i18n="hero.title3">بـ Flutter و .NET</span>
+    </h1>
+
+    <p class="hero-sub" data-i18n-html="hero.sub">
+      <strong>علي حسن علي</strong> — مطور <span class="hl">Flutter</span> و<span class="hl">Full Stack .NET</span>
+      بخبرة عملية في بناء حلول متكاملة من الواجهة إلى قاعدة البيانات.
+      أطبّق <span class="hl">Clean Architecture</span> و<span class="hl">BLoC/Cubit</span> في الموبايل،
+      و<span class="hl">ASP.NET Core</span> و<span class="hl">Angular</span> في الويب، مع
+      <span class="hl">CI/CD</span> عبر Azure DevOps.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">استعرض المشاريع</a>
+      <a href="assets/Ali_Hassan_Flutter_CV.pdf" class="btn btn-ghost" download data-i18n="hero.cta.cvFlutter">سيرة Flutter ↓</a>
+      <a href="assets/Ali_Hassan_FullStack_CV.pdf" class="btn btn-ghost" download data-i18n="hero.cta.cvDotnet">سيرة .NET ↓</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="about.title">نبذة عني</h2>
+      <div class="about-grid">
+        <p class="about-text" data-i18n-html="about.p1">
+          مطور <strong>Flutter</strong> بخبرة سنتين في بناء تطبيقات iOS وAndroid
+          باستخدام <strong>BLoC/Cubit</strong> و<strong>Clean Architecture</strong>،
+          مع تكامل RESTful APIs عبر Dio وFirebase للإشعارات والمصادقة.
+          أربعة تطبيقات منشورة على Google Play في مجالات التعليم والتجارة والتوريد.
+        </p>
+        <p class="about-text" data-i18n-html="about.p2">
+          بالتوازي، أطوّر أنظمة ويب وخلفيات بـ <strong>ASP.NET Core Web API</strong>
+          و<strong>Angular</strong> و<strong>Entity Framework Core</strong>،
+          شاملة مشروع CRM عقاري ثنائي اللغة ومشروع تخرج بنظام MEP مدعوم بالذكاء الاصطناعي.
+          أعمل حالياً في <strong>Forgotten Mines</strong> على تطبيقات Flutter Web
+          وخدمات .NET مع خطوط CI/CD آلية.
+        </p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-num mono" data-stat-index="0">٤</span>
+          <span class="stat-label" data-i18n="stat.apps">تطبيقات على Google Play</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num mono" data-stat-index="1">٢</span>
+          <span class="stat-label" data-i18n="stat.years">سنوات خبرة مهنية</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num mono" data-stat-index="2">٢</span>
+          <span class="stat-label" data-i18n="stat.fields">مجال: موبايل + ويب</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num mono" data-stat-index="3">٦</span>
+          <span class="stat-label" data-i18n="stat.projects">مشاريع منجزة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="stack">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="stack.title">الحزمة التقنية</h2>
+
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h3 class="stack-card-title" data-i18n="stack.mobile">تطوير الموبايل</h3>
+          <ul class="stack-list mono">
+            <li>Flutter &amp; Dart</li><li>BLoC / Cubit / Provider</li>
+            <li>Clean Architecture &amp; MVVM</li><li>Dio &amp; REST APIs</li>
+            <li>Firebase Auth &amp; FCM</li><li>Localization</li>
+          </ul>
+        </div>
+        <div class="stack-card">
+          <h3 class="stack-card-title" data-i18n="stack.web">الويب والخلفية</h3>
+          <ul class="stack-list mono">
+            <li>C# &amp; ASP.NET Core</li><li>Angular &amp; TypeScript</li>
+            <li>Entity Framework Core</li><li>SQL Server &amp; MySQL</li>
+            <li>JWT Authentication</li><li>Flutter Web</li>
+          </ul>
+        </div>
+        <div class="stack-card">
+          <h3 class="stack-card-title" data-i18n="stack.devops">العمليات والتصميم</h3>
+          <ul class="stack-list mono">
+            <li>Git &amp; GitHub</li><li>Azure DevOps &amp; CI/CD</li>
+            <li>Docker</li><li>Figma &amp; Adobe XD</li>
+            <li>Agile / Scrum</li><li>OpenAI Vision API</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="projects.title">المشاريع</h2>
+
+      <div class="projects-filter mono" role="tablist" aria-label="تصفية المشاريع">
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true" data-i18n="projects.filterAll">الكل</button>
+        <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false" data-i18n="projects.filterMobile">موبايل</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" data-i18n="projects.filterWeb">ويب وأنظمة</button>
+      </div>
+
+      <div class="projects-groups">
+
+        <div class="projects-group" data-category="mobile">
+          <h3 class="projects-group-title" data-i18n="projects.mobileGroup">تطبيقات الموبايل</h3>
+          <div class="projects-grid">
+
+            <article class="project-card" data-type="mobile">
+              <div class="project-media project-gallery" data-gallery>
+                <div class="project-gallery-main">
+                  <div class="device-frame">
+                    <img src="images/safety_point_academy1.webp" alt="Safety Point Academy" class="project-gallery-shot" data-gallery-main>
+                  </div>
+                </div>
+                <div class="project-gallery-thumbs">
+                  <button type="button" class="project-gallery-thumb is-active" aria-label="Screenshot 1">
+                    <img src="images/safety_point_academy1.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 2">
+                    <img src="images/safety_point_academy2.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 3">
+                    <img src="images/safety_point_academy3.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 4">
+                    <img src="images/safety_point_academy4.webp" alt="">
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title">Safety Point Academy</h4>
+                </div>
+                <p class="project-desc" data-i18n="proj.safety.desc">
+                  منصة تدريب وشهادات السلامة المهنية — دورات، امتحانات، شهادات قابلة للتحقق،
+                  ودعم عربي/إنجليزي مع Cubit وREST APIs.
+                </p>
+                <div class="project-tech mono">
+                  <span>Flutter</span><span>Cubit</span><span>REST API</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.safetypoint.academy&amp;hl=en_US" class="store-badge" target="_blank" rel="noopener" aria-label="Safety Point Academy on Google Play">
+                  <img src="assets/img/google-play-badge.png" alt="Google Play" width="132" height="36">
+                </a>
+                <p class="project-meta mono" data-i18n="meta.freelance">عمل حر</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-type="mobile">
+              <div class="project-media project-gallery" data-gallery>
+                <div class="project-gallery-main">
+                  <div class="device-frame">
+                    <img src="images/I%27m_in1.webp" alt="I'm In" class="project-gallery-shot" data-gallery-main>
+                  </div>
+                </div>
+                <div class="project-gallery-thumbs">
+                  <button type="button" class="project-gallery-thumb is-active" aria-label="Screenshot 1">
+                    <img src="images/I%27m_in1.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 2">
+                    <img src="images/I%27m_in2.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 3">
+                    <img src="images/I%27m_in3.webp" alt="">
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title">I'm In</h4>
+                </div>
+                <p class="project-desc" data-i18n="proj.imin.desc">
+                  منصة تعليمية — دورات متنوعة، مدربين خبراء، فرص عمل حرة،
+                  وإشعارات فورية عبر Firebase Cloud Messaging.
+                </p>
+                <div class="project-tech mono">
+                  <span>Flutter</span><span>MVVM</span><span>FCM</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.iamin.edu" class="store-badge" target="_blank" rel="noopener" aria-label="I'm In on Google Play">
+                  <img src="assets/img/google-play-badge.png" alt="Google Play" width="132" height="36">
+                </a>
+                <p class="project-meta mono" data-i18n="meta.freelance">عمل حر</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-type="mobile">
+              <div class="project-media project-gallery" data-gallery>
+                <div class="project-gallery-main">
+                  <div class="device-frame">
+                    <img src="images/altaqwa1.webp" alt="Al-Taqwa" class="project-gallery-shot" data-gallery-main>
+                  </div>
+                </div>
+                <div class="project-gallery-thumbs">
+                  <button type="button" class="project-gallery-thumb is-active" aria-label="Screenshot 1">
+                    <img src="images/altaqwa1.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 2">
+                    <img src="images/altaqwa2.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 3">
+                    <img src="images/altaqwa3.webp" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 4">
+                    <img src="images/altaqwa4.webp" alt="">
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title" data-i18n="proj.altqwa.title">التقوى</h4>
+                </div>
+                <p class="project-desc" data-i18n="proj.altqwa.desc">
+                  منصة B2B لتوريد الأغذية والمشروبات بالجملة للتجار — أكثر من ٣٠٠٠ منتج،
+                  كتالوج، إدارة طلبات، وخدمة عملاء.
+                </p>
+                <div class="project-tech mono">
+                  <span>Flutter</span><span>Clean Architecture</span><span>B2B</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.app.Altaqwaa&amp;hl=en" class="store-badge" target="_blank" rel="noopener" aria-label="Al-Taqwa on Google Play">
+                  <img src="assets/img/google-play-badge.png" alt="Google Play" width="132" height="36">
+                </a>
+                <p class="project-meta mono" data-i18n="meta.freelance">عمل حر</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-type="mobile">
+              <div class="project-media project-gallery" data-gallery>
+                <div class="project-gallery-main">
+                  <div class="device-frame">
+                    <img src="images/e-ramo_store.webp" alt="e-RAMO Store" class="project-gallery-shot" data-gallery-main>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title">e-RAMO Store</h4>
+                </div>
+                <p class="project-desc" data-i18n="proj.eramo.desc">
+                  تطبيق تجارة إلكترونية إنتاجي — تصفح منتجات، سلة، دفع، ومصادقة
+                  مع BLoC وClean Architecture وواجهة متجاوبة.
+                </p>
+                <div class="project-tech mono">
+                  <span>Flutter</span><span>BLoC</span><span>REST API</span>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=eramo.eramostore" class="store-badge" target="_blank" rel="noopener" aria-label="e-RAMO Store on Google Play">
+                  <img src="assets/img/google-play-badge.png" alt="Google Play" width="132" height="36">
+                </a>
+                <p class="project-meta mono">e-RAMO Digital Solutions</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="projects-group" data-category="web">
+          <h3 class="projects-group-title" data-i18n="projects.webGroup">الويب والأنظمة</h3>
+          <div class="projects-grid">
+
+            <article class="project-card project-card--featured" data-type="web">
+              <div class="project-media project-gallery project-gallery--desktop" data-gallery>
+                <div class="browser-chrome">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                  <span class="browser-url mono">real-estate-crm-orpin.vercel.app</span>
+                </div>
+                <div class="project-gallery-main project-gallery-main--desktop">
+                  <img src="images/crm1.png" alt="Real Estate CRM" class="project-gallery-shot project-gallery-shot--desktop" data-gallery-main>
+                </div>
+                <div class="project-gallery-thumbs">
+                  <button type="button" class="project-gallery-thumb is-active" aria-label="Screenshot 1">
+                    <img src="images/crm1.png" alt="">
+                  </button>
+                  <button type="button" class="project-gallery-thumb" aria-label="Screenshot 2">
+                    <img src="images/crm2.png" alt="">
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title">Real Estate CRM</h4>
+                  <span class="project-tag mono" data-i18n="proj.crm.tag">Full Stack</span>
+                </div>
+                <p class="project-desc" data-i18n="proj.crm.desc">
+                  نظام CRM عقاري ثنائي اللغة (عربي/إنجليزي) — إدارة العملاء المحتملين،
+                  الصفقات، المشاريع والمخزون، التذاكر، الإشعارات، وتقارير الإدارة.
+                  Backend بـ ASP.NET Core (.NET 8, Clean Architecture, EF Core, JWT)
+                  وFrontend بـ Angular.
+                </p>
+                <div class="project-tech mono">
+                  <span>.NET 8</span><span>Angular</span><span>SQL Server</span><span>JWT</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://real-estate-crm-orpin.vercel.app/auth/login" class="project-link" target="_blank" rel="noopener" data-i18n="proj.crm.link">عرض المشروع ↗</a>
+                </div>
+                <p class="project-meta mono">ITI</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-type="web">
+              <div class="project-media">
+                <img src="assets/img/projects/mep_system.svg" alt="MEP Management System" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title">MEP Management System</h4>
+                  <span class="project-tag mono" data-i18n="proj.mep.tag">مشروع تخرج</span>
+                </div>
+                <p class="project-desc" data-i18n="proj.mep.desc">
+                  نظام إدارة مواد MEP مع استخراج كميات بالذكاء الاصطناعي
+                  عبر OpenAI Vision API — ASP.NET Core، Angular، Python، وأتمتة Excel.
+                </p>
+                <div class="project-tech mono">
+                  <span>ASP.NET Core</span><span>Angular</span><span>OpenAI</span><span>Python</span>
+                </div>
+                <p class="project-meta mono" data-i18n="proj.mep.meta">ITI — مشروع تخرج</p>
+              </div>
+            </article>
+
+            <article class="project-card" data-type="web">
+              <div class="project-media">
+                <img src="assets/img/projects/war_to_core.svg" alt="War To The Core" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-head">
+                  <h4 class="project-title">War To The Core</h4>
+                  <span class="project-tag mono" data-i18n="proj.war.tag">Flutter Web</span>
+                </div>
+                <p class="project-desc" data-i18n="proj.war.desc">
+                  الموقع الترويجي الرسمي للعبة أركيد — تطبيق Flutter Web متجاوب
+                  بحركات تفاعلية سلسة ومتوافق مع المتصفحات.
+                </p>
+                <div class="project-tech mono">
+                  <span>Flutter Web</span><span>Animations</span><span>Responsive</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://wartothecore.com/" class="project-link" target="_blank" rel="noopener" data-i18n="proj.war.link">wartothecore.com ↗</a>
+                </div>
+                <p class="project-meta mono">Forgotten Mines</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="experience">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="exp.title">الخبرة والتعليم</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3 data-i18n="exp.fm.title">مطور Full Stack</h3>
+              <span class="timeline-date mono" data-i18n="exp.fm.date">أكتوبر ٢٠٢٤ — الآن</span>
+            </div>
+            <p class="timeline-org" data-i18n="exp.fm.org">Forgotten Mines — عن بُعد</p>
+            <ul class="timeline-list">
+              <li data-i18n="exp.fm.1">تطوير تطبيقات Flutter Web مع التركيز على الأداء وتجربة المستخدم</li>
+              <li data-i18n="exp.fm.2">بناء ودمج خدمات ASP.NET Core Web API لضمان تدفق بيانات موثوق</li>
+              <li data-i18n="exp.fm.3">تصميم خطوط CI/CD عبر Azure DevOps لأتمتة البناء والاختبار والنشر</li>
+              <li data-i18n="exp.fm.4">العمل ضمن فريق Agile مع تخطيط السبرنتات والمراجعات الدورية</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3 data-i18n="exp.eramo.title">متدرب مطور Flutter</h3>
+              <span class="timeline-date mono" data-i18n="exp.eramo.date">سبتمبر — أكتوبر ٢٠٢٤</span>
+            </div>
+            <p class="timeline-org" data-i18n="exp.eramo.org">e-RAMO For Digital Solutions</p>
+            <ul class="timeline-list">
+              <li data-i18n="exp.eramo.1">تطوير تطبيق تجارة إلكترونية كامل بـ Flutter وClean Architecture</li>
+              <li data-i18n="exp.eramo.2">تطبيق BLoC لفصل المنطق وضمان قابلية الاختبار</li>
+              <li data-i18n="exp.eramo.3">تكامل REST APIs والإشعارات والتعريب لمستخدمين متعددي اللغات</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker timeline-marker--edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3 data-i18n="exp.iti.title">تطوير ويب Full Stack — مسار .NET</h3>
+              <span class="timeline-date mono" data-i18n="exp.iti.date">يوليو — ديسمبر ٢٠٢٥</span>
+            </div>
+            <p class="timeline-org" data-i18n="exp.iti.org">ITI — فرع المنيا</p>
+            <ul class="timeline-list">
+              <li data-i18n="exp.iti.1">برنامج تدريبي مكثف ٦ أشهر في .NET وAngular وSQL Server</li>
+              <li data-i18n="exp.iti.2">مشروع تخرج: MEP Management System مدعوم بالذكاء الاصطناعي</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker timeline-marker--edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3 data-i18n="exp.route.title">دبلومة تطوير Flutter</h3>
+              <span class="timeline-date mono" data-i18n="exp.route.date">ديسمبر ٢٠٢٣ — أبريل ٢٠٢٤</span>
+            </div>
+            <p class="timeline-org" data-i18n="exp.route.org">Route IT Center</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker timeline-marker--edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3 data-i18n="exp.bsc.title">بكالوريوس علوم الحاسب</h3>
+              <span class="timeline-date mono" data-i18n="exp.bsc.date">٢٠١٨ — ٢٠٢٢</span>
+            </div>
+            <p class="timeline-org" data-i18n="exp.bsc.org">New Cairo Academy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title" data-i18n="contact.title">تواصل معي</h2>
+      <p class="section-desc contact-desc" data-i18n="contact.desc">
+        يسعدني التواصل لمناقشة مشروع أو فكرة — راسلني عبر أي من القنوات أدناه.
+      </p>
+
+      <div class="contact-grid">
+        <a href="mailto:ali.hassan.ashiry@gmail.com" class="contact-card">
+          <span class="contact-card-label mono" data-i18n="contact.email">البريد الإلكتروني</span>
+          <span class="contact-card-value">ali.hassan.ashiry@gmail.com</span>
+        </a>
+        <a href="tel:+201098344748" class="contact-card">
+          <span class="contact-card-label mono" data-i18n="contact.phone">الهاتف</span>
+          <span class="contact-card-value">+20 109 834 4748</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ali-hassan-654350197/" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card-label mono" data-i18n="contact.linkedin">لينكدإن</span>
+          <span class="contact-card-value">ali-hassan-654350197</span>
+        </a>
+        <a href="https://github.com/aliashiry" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card-label mono" data-i18n="contact.github">جيتهاب</span>
+          <span class="contact-card-value">github.com/aliashiry</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner mono">
+    <span data-i18n="footer.copy">© 2026 علي حسن علي</span>
+    <a href="#home" class="footer-top" data-i18n="footer.top">للأعلى ↑</a>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
