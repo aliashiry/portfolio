@@ -1,110 +1,111 @@
-# بورتفوليو علي حسن علي — Flutter & Full Stack .NET
+# Ali Hassan Ali — Flutter & Full Stack .NET Portfolio
 
-موقع بورتفوليو شخصي يعرض المشاريع، الخبرة، والمهارات التقنية لمطور Flutter متخصص في Clean Architecture وBLoC، مع خلفية Full Stack .NET.
+A personal portfolio website showcasing mobile and web projects, experience, and technical skills. Built for a Flutter developer with Clean Architecture and BLoC experience, plus a Full Stack .NET background.
 
-**🔗 شاهد الموقع مباشرة:** `https://<username>.github.io/<repo-name>/`
-*(غيّر الرابط بعد رفع المشروع على GitHub Pages — راجع قسم النشر بالأسفل)*
-
----
-
-## ✨ المميزات
-
-- تصميم عربي كامل (RTL) بخط `IBM Plex Sans Arabic`
-- واجهة بأسلوب "محرر كود" تعكس هوية المطور
-- قسم مشاريع تفصيلي مع روابط Google Play وكود المصدر
-- Timeline تفاعلي للخبرة والتعليم
-- متجاوب بالكامل (Mobile / Tablet / Desktop)
-- بدون أي مكتبات خارجية — HTML/CSS/JS خام بالكامل
-- جاهز للنشر فوراً على GitHub Pages
+**Live site:** https://aliashiry.github.io/portfolio/  
+**Repository:** https://github.com/aliashiry/portfolio
 
 ---
 
-## 📁 هيكل المشروع
+## Features
+
+- Bilingual UI (Arabic / English) with an EN/AR toggle in the navbar
+- Full RTL/LTR support with logical CSS properties
+- Developer-focused layout with a code-editor aesthetic
+- Detailed projects section with Google Play links and live demos
+- Interactive experience and education timeline
+- Fully responsive (mobile, tablet, desktop)
+- No external frameworks — plain HTML, CSS, and JavaScript
+- Ready to deploy on GitHub Pages
+
+---
+
+## Project Structure
 
 ```
 portfolio/
-├── index.html              # الصفحة الرئيسية
+├── index.html                  # Main page
 ├── css/
-│   └── style.css            # كل الأنماط والتصميم
+│   └── style.css               # Styles and layout
 ├── js/
-│   └── main.js               # تفاعلات الموقع (نافبار، سكرول، أنيميشن)
+│   ├── main.js                 # Navbar, scroll, animations
+│   └── i18n.js                 # Arabic/English translations
 ├── assets/
-│   ├── CV_Ali_Arabic.pdf     # السيرة الذاتية (رابط تحميل في الموقع)
+│   ├── Ali_Hassan_Flutter_CV.pdf
+│   ├── Ali_Hassan_FullStack_CV.pdf
 │   └── img/
-│       └── projects/         # صور المشاريع (Placeholder حالياً)
+│       ├── google-play-badge.png
+│       └── projects/           # SVG placeholders for some projects
+├── images/                     # App and web project screenshots
 └── README.md
 ```
 
 ---
 
-## 🛠️ التشغيل محلياً
+## Run Locally
 
-ملف HTML بسيط، تقدر تفتحه مباشرة بالمتصفح، أو تشغّل سيرفر محلي بسيط:
+Open `index.html` directly in your browser, or use a simple local server:
 
 ```bash
-# باستخدام Python
-python3 -m http.server 8000
+# Python
+python -m http.server 8000
 
-# أو باستخدام Node
+# Node.js
 npx serve .
 ```
 
-ثم افتح `http://localhost:8000` في المتصفح.
+Then open `http://localhost:8000`.
 
 ---
 
-## 🌐 النشر على GitHub Pages
+## Deploy to GitHub Pages
 
-1. أنشئ مستودع (repository) جديد على GitHub، وارفع كل ملفات هذا المشروع.
-2. من إعدادات المستودع (Settings) → اختر **Pages** من القائمة الجانبية.
-3. تحت **Source** اختر الفرع `main` والمجلد `/ (root)`.
-4. اضغط **Save**، وانتظر دقيقة أو اثنتين.
-5. سيظهر رابط الموقع تلقائياً بالشكل: `https://<username>.github.io/<repo-name>/`
+1. Push the project to a GitHub repository.
+2. Go to **Settings → Pages**.
+3. Under **Source**, select branch `main` and folder `/ (root)`.
+4. Save and wait a minute or two.
+5. Your site will be available at `https://<username>.github.io/<repo-name>/`.
 
-أو عبر سطر الأوامر:
+Example for this repo:
 
 ```bash
-git init
-git add .
-git commit -m "إضافة بورتفوليو شخصي"
-git branch -M main
-git remote add origin https://github.com/<username>/<repo-name>.git
+git remote add origin https://github.com/aliashiry/portfolio.git
 git push -u origin main
 ```
 
 ---
 
-## ✏️ التخصيص
+## Customization
 
-### تحديث المعلومات الشخصية
-كل النصوص موجودة مباشرة داخل `index.html` — غيّر البريد الإلكتروني، LinkedIn، GitHub في قسم `#contact` وفي الـ `<header>`.
+### Personal info
+Most content lives in `index.html`. Update email, LinkedIn, and GitHub links in the `#contact` section and header.
 
-### استبدال صور المشاريع
-الصور الحالية في `assets/img/projects/` هي Placeholder بصيغة SVG. لاستبدالها:
-1. احصل على لقطة شاشة حقيقية من كل تطبيق (مقاس مقترح: 600×400 أو أي نسبة 3:2).
-2. ضعها في `assets/img/projects/` بنفس الاسم لكن بصيغة `.png` أو `.jpg`.
-3. عدّل مسار `src` في `index.html` لكل `<img>` ليطابق الملف الجديد.
+### Translations
+Edit `js/i18n.js` to change Arabic or English copy. Keys follow a `section.element` pattern (e.g. `hero.title1`, `nav.about`).
 
-### إضافة مشروع جديد
-انسخ بلوك `<article class="project-card">...</article>` كامل من `index.html`، وعدّل المحتوى والصورة والروابط.
+### Project images
+Screenshots are in `images/`. SVG placeholders are in `assets/img/projects/`. Replace or update the `src` paths in `index.html` as needed.
 
-### تغيير الألوان
-كل الألوان معرّفة كمتغيرات CSS في أول ملف `css/style.css` تحت `:root` — غيّر القيم هناك وستنعكس على كل الموقع تلقائياً.
+### Add a new project
+Duplicate an `<article class="project-card">...</article>` block in `index.html` and update the content, image, and links.
+
+### Colors and typography
+Design tokens are defined as CSS variables at the top of `css/style.css` under `:root`.
 
 ---
 
-## 🎨 الهوية البصرية
+## Visual Identity
 
-| العنصر | القيمة |
+| Element | Value |
 |---|---|
-| الخلفية | `#0B1220` |
-| اللون المميز (Accent) | `#5EEAD4` |
-| خط العناوين | Space Grotesk |
-| خط النصوص العربية | IBM Plex Sans Arabic |
-| خط الكود | JetBrains Mono |
+| Background | `#0B1220` |
+| Accent | `#5EEAD4` |
+| Headings | Space Grotesk |
+| Arabic text | IBM Plex Sans Arabic |
+| Code | JetBrains Mono |
 
 ---
 
-## 📄 الترخيص
+## License
 
-هذا المشروع للاستخدام الشخصي كبورتفوليو. عدّله بحرية كما تحتاج.
+This project is for personal portfolio use. Feel free to adapt it for your own needs.
