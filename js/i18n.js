@@ -176,7 +176,7 @@ const STAT_NUMS = { ar: ['٤', '٢', '٢', '٦'], en: ['4', '2', '2', '6'] };
 function getStoredLang() {
   const saved = localStorage.getItem('portfolio-lang');
   if (saved === 'ar' || saved === 'en') return saved;
-  return document.documentElement.lang === 'en' ? 'en' : 'ar';
+  return document.documentElement.lang === 'ar' ? 'ar' : 'en';
 }
 
 function applyLanguage(lang) {
